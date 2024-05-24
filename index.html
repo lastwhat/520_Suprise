@@ -145,8 +145,15 @@
     </div>
   </div>
 
-  <audio id="audio" src="https://music.163.com/song/media/outer/url?id=1861756010.mp3" preload="auto"
-  loop="loop"></audio>
+  <audio id="audio" src="https://music.163.com/song/media/outer/url?id=1861756010.mp3" preload="auto" loop="loop" autoplay></audio>
+
+  <script>
+    window.onload = function() {
+      var audio = document.getElementById('audio');
+      audio.play();
+    };
+  </script>
+  
   <div class="type_words" id="contents"></div>
 
   <!-- build:js scripts/main.js -->
